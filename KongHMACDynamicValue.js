@@ -65,7 +65,7 @@ var KongHmacDynamicValue = function() {
         return 'Kong HMAC Auth';        
     };
     this.text = function(context) {
-        return 'Kong HMAC Auth';
+        return 'Base64(' + this.algorithm + '(' + this.headers + ', secret))';
     };
 };
 
