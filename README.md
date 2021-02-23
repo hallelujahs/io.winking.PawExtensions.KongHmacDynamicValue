@@ -14,7 +14,7 @@ A Paw Extension to compute Kong HMAC authentication signatures for the accessing
 
 Note that in addition to `host` and `request-line`, other headers must already exist in the HTTP Headers. 
 
-If it is a date header, you can use the **Timestamp** value in RFC 1123/2822 format as above.
+If it is a **Date** header, you can use the **Timestamp** value in RFC 1123/2822 format as above.
 
 
 
