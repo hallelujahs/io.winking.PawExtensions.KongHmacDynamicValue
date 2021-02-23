@@ -47,6 +47,8 @@ var KongHmacDynamicValue = function() {
 
         var signing_str = headers.join('\n');
         var digest = '';
+
+        // crypto-js 3.3.0 from https://www.cdnpkg.com/crypto-js/file/crypto-js.min.js/
         var CryptoJS = require('crypto-js.min.js');
         if (this.algorithm === 'hmac-sha1') {
             digest = CryptoJS.HmacSHA1(signing_str, this.secret);
