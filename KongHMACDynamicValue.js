@@ -16,7 +16,7 @@ function urlParse(url) {
 }
 
 
-var KongHMACDynamicValue = function() {
+var KongHmacDynamicValue = function() {
     this.evaluate = function(context) {
         var request = context.getCurrentRequest();
         var url_parse = urlParse(request.getUrl());
@@ -78,10 +78,10 @@ var KongHMACDynamicValue = function() {
 };
 
 
-KongHMACDynamicValue.identifier = 'io.winking.PawExtensions.KongHMACDynamicValue';
-KongHMACDynamicValue.title = 'HMAC Auth';
-KongHMACDynamicValue.help = 'https://github.com/hallelujahs/io.winking.PawExtensions.KongHMACDynamicValue';
-KongHMACDynamicValue.inputs = [
+KongHmacDynamicValue.identifier = 'io.winking.PawExtensions.KongHmacDynamicValue';
+KongHmacDynamicValue.title = 'HMAC Auth';
+KongHmacDynamicValue.help = 'https://github.com/hallelujahs/io.winking.PawExtensions.KongHmacDynamicValue';
+KongHmacDynamicValue.inputs = [
     InputField('username', 'Username', 'String'),
     InputField('secret', 'Secret', 'SecureValue'),
     InputField('algorithm', 'HMAC Algorithm', 'Select', {
@@ -94,4 +94,4 @@ KongHMACDynamicValue.inputs = [
     }),
 ];
 
-registerDynamicValueClass(KongHMACDynamicValue);
+registerDynamicValueClass(KongHmacDynamicValue);
