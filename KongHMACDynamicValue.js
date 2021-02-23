@@ -62,16 +62,16 @@ var KongHmacDynamicValue = function() {
             '", signature="' + CryptoJS.enc.Base64.stringify(digest) + '"';
     };
     this.title = function(context) {
-        return 'HMAC Auth';        
+        return 'Kong HMAC Auth';        
     };
     this.text = function(context) {
-        return 'HMAC Auth';
+        return 'Kong HMAC Auth';
     };
 };
 
 
 KongHmacDynamicValue.identifier = 'io.winking.PawExtensions.KongHmacDynamicValue';
-KongHmacDynamicValue.title = 'HMAC Auth';
+KongHmacDynamicValue.title = 'Kong HMAC Auth';
 KongHmacDynamicValue.help = 'https://github.com/hallelujahs/io.winking.PawExtensions.KongHmacDynamicValue';
 KongHmacDynamicValue.inputs = [
     InputField('username', 'Username', 'String'),
