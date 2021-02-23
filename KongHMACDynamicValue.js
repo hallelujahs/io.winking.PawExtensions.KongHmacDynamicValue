@@ -40,14 +40,6 @@ var KongHmacDynamicValue = function() {
                     continue;
                 }
 
-                if (header_name === 'date') {
-                    var now = new Date();
-                    var now_utc_str = now.toUTCString();
-                    request.setHeader('date', now_utc_str);
-                    headers.push('date: ' + now_utc_str);
-                    continue;
-                }
-
                 return 'Error: Missing Header ' + header_name;
             }
             headers.push(header_name + ': ' + header);
